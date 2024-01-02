@@ -2,15 +2,21 @@
 using namespace std;
 
 int main() {
-    int score;
-    cin >> score;
+    int mid, finals;
+    cin >> mid >> finals;
 
-    if (score >= 95) {
-        cout << "100000";
-    } else if (score >= 90) {
-        cout << "50000";
+    if (mid >= 90) {
+        if (finals >= 95) {
+            cout << "100000";
+        } else if (finals >= 90) {
+            cout << "50000";
+        } else {
+            cout << "0";
+        }
     } else {
         cout << "0";
     }
+
+
     return 0;
 }
