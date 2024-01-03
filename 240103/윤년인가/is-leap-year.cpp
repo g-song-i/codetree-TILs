@@ -9,10 +9,13 @@ int main() {
         if (year % 100 == 0) {
             if (year % 400 == 0) {
                 cout << "true";
+            } else {
+                cout << "false";
             }
             cout << "false";
+        } else {
+            cout << "true";
         }
-        cout << "true";
     } else {
         cout << "false";
     }
