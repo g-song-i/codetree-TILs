@@ -8,11 +8,20 @@ int main() {
     int sum_val;
     sum_val = 0;
 
-    for (int i = a; i <= b; i++) {
+    if (a < b) {
+        for (int i = a; i <= b; i++) {
         if (i % 5 == 0) {
             sum_val += i;
         }
     }
+    } else if (a > b) {
+        for (int i = b; i <= a; i++) {
+        if (i % 5 == 0) {
+            sum_val += i;
+        }
+    }
+    }
+    
     
     cout << sum_val;
 
