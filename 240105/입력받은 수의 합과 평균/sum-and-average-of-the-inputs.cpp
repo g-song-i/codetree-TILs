@@ -18,7 +18,10 @@ int main() {
     }
 
     avg_val = sum_val / (double) n;
-    cout << sum_val << " " << avg_val;
     
+    cout << fixed;
+    cout.precision(1);
+    cout << sum_val << " " << avg_val;
+
     return 0;
 }
