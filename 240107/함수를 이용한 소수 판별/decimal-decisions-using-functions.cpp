@@ -12,8 +12,14 @@ bool IsPrime(int n) {
 
 int main() {
     int a, b;
+
+    // handling exception
     if (!(cin >> a >> b)) {
         cerr << endl;
+        return 0;
+    }
+
+    if (a == b) {
         return 0;
     }
 
