@@ -12,7 +12,10 @@ bool IsPrime(int n) {
 
 int main() {
     int a, b;
-    cin >> a >> b;
+    if (!(cin >> a >> b)) {
+        cerr << endl;
+        return 0;
+    }
 
     int sum_val;
     sum_val = 0;
@@ -24,6 +27,6 @@ int main() {
     }
 
     cout << sum_val;
-    
+
     return 0;
 }
