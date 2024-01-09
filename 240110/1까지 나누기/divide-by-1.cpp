@@ -9,12 +9,12 @@ int main() {
     cnt = 0;
     i = 1;
 
-    while (n > 0) {
+    while (n > 1) {
         n /= i;
         cnt++;
         i++;
 
-        if (n == 0) {
+        if (n <= 1) {
             cout << cnt;
             break;
         }
