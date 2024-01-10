@@ -23,6 +23,8 @@ int main() {
         avg = sum / (double) cnt;
     }
 
+    cout << fixed;
+    cout.precision(1);
     cout << sum << " " << avg;
 
     return 0;
