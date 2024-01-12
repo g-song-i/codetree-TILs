@@ -16,7 +16,10 @@ int main() {
         cnt++;
     }
 
-    for (int i = cnt; i >= 0; --i) {
+    for (int i = cnt; i >= 0; i--) {
+        if (arr[i] == 0) {
+            continue;
+        }
         sum += arr[i];
     }
 
