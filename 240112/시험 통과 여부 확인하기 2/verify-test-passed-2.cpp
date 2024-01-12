@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int studentNum;
-    int score[studentNum];
+    int score[4];
     int cnt = 0;
 
     cin >> studentNum;
