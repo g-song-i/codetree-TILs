@@ -5,10 +5,10 @@ int main() {
     int n;
     cin >> n;
 
-    int arr[10] = {0, };
+    int arr[100];
     int countArr[10] = {0, };
 
-    for (int i = 1; i <= n; i++) {
+    for (int i = 0; i < n; i++) {
         cin >> arr[i];
         countArr[arr[i]]++;
     }
